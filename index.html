@@ -4,6 +4,8 @@
   <head>
     <meta charset="UTF-8" />
     <title>The Basic Language of Web : HTML</title>
+
+    <link rel="stylesheet" href="/style.css" />
   </head>
 
   <body>
@@ -27,10 +29,13 @@
         </p>
         <h2>The basic language of web : HTML</h2>
 
-        <img src="img/laura-jones.jpg"
-        alt="author pic(need to be assign correct one)" width="50" height="50"
+        <img
+          src="img/laura-jones.jpg"
+          alt="author pic(need to be assign correct one)"
+          width="50"
+          height="50"
         />
-        <p>Posted by <strong>laura Jones</strong> on Monday</p>
+        <p id="author">Posted by <strong>laura Jones</strong> on Monday</p>
 
         <img
           src="img/post-img.jpg"
@@ -98,26 +103,26 @@
     </article>
     <aside>
       <h4>Related Posts</h4>
-      <ul>
+      <ul class="related">
         <li>
           <img
-            src="img/related-1.jpg"
+            src="/img/related-1.jpg"
             alt="desc about pic "
             width="75"
             height="75"
           />
           <a href="#">How to learn web development</a>
-          <p>By Jonas Schmedtmann</p>
+          <p class="related-author">By Jonas Schmedtmann</p>
         </li>
         <li>
           <img
-            src="img/related-2.jpg"
+            src="/img/related-2.jpg"
             alt="Any random image"
             height="75"
             width="75"
           />
           <a href="#">The Unknown power of CSS</a>
-          <p>By Aaditya Gujjar</p>
+          <p class="related-author">By Aaditya Gujjar</p>
         </li>
         <li>
           <img
@@ -127,11 +132,13 @@
             width="75"
           />
           <a href="#">JavaScript is awesome </a>
-          <p>By Aashish Kumar</p>
+          <p class="related-author">By Aashish Kumar</p>
         </li>
       </ul>
     </aside>
-    <footer>Copyright &copy; 2027 The Code Magezine.</footer>
+    <footer>
+      <p id="copyright">Copyright &copy; 2027 The Code Magezine.</p>
+    </footer>
+    <!-- <script src="/practice.js"></script> -->
   </body>
 </html>
-
