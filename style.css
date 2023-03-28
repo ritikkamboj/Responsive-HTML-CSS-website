@@ -1,14 +1,89 @@
-h1,
+* {
+  /* color: azure; */
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+  position: relative;
+}
+
+body {
+  /* color: red; */
+  color: #444;
+  font-family: sans-serif;
+
+  border-top: 10px solid #1098ad;
+  max-width: inherit;
+  /* margin: 0px; */
+  position: relative;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  height: 80px;
+}
+
+nav a:link {
+  /* background-color: red;
+  margin: 20px;
+  padding: 20px;
+  display: block;  we have to find out this from inspect , lets see what good we found 😀*/
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+.post-header {
+  margin-bottom: 40px;
+  /* position: relative; */
+}
+
+nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+aside {
+  background-color: #f7f7f7;
+
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0px;
+  width: 500px;
+}
+
+s
+/* h1,
 h2,
 h3,
 h4,
 p,
-li {
-  font-family: sans-serif;
+/* a :link, it works when we used "a:link" , because it html we used <a href=""></a> */
+/* li { */
+/* color: yellow; */
+/* } */
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
 }
 
 h1 {
-  /* color: blue; */
+  color: blue;
   font-size: 26px;
   text-transform: uppercase;
   font-style: italic;
@@ -16,9 +91,11 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
 }
 h4 {
   font-size: 20px;
@@ -30,10 +107,22 @@ p {
   font-size: 22px;
 
   line-height: 1.5;
-  /* background-color: yellow; */
+  /* color: yellow; */
+  /* display: inline; */
 }
 li {
   font-size: 20px;
+  margin-bottom: 10px; /* this propety also add the margin to last element as well , which is not required , as of standard which we follow */
+  /* display: inline; */
+}
+ol,
+ul {
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+li:last-child {
+  margin-bottom: 0px;
 }
 /* 
 footer p {
@@ -43,20 +132,126 @@ footer p {
 article header p {
   font-style: italic;
 } */
+.experiment {
+  height: 30px;
+  width: 40px;
+  /* background-color: rgb(244, 179, 63, 0.9); */
+}
 
 #author {
   font-style: italic;
   font-size: 18px;
+  /* position: relative; */
+}
+.post-img {
+  width: 100%;
+  height: auto;
 }
 
 #copyright {
   font-size: 16px;
 }
 
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  /* top: 50px;
+  left: 50px; */
+
+  bottom: 50px;
+  right: 50px;
+}
 .related {
   list-style: none;
 }
 .related-author {
   font-size: 18px;
   font-weight: bold;
+}
+
+li:first-child {
+  /* font-weight: bold; */
+  color: red;
+}
+
+/* why last child pseudo element not working , god help me my partner  */
+li:last-child {
+  /* font-style: bold;
+  background-color: green; */
+
+  font-style: italic;
+
+  /* color: yellow; */
+}
+/* 
+li:nth-child(odd) {
+  color: yellow;
+  background-color: blue;
+} */
+
+/* below statement is not working according to shown in video tutorial  */
+/* according to below , its should select the first child p element in article tag  */
+
+/* but if we add a first p element in article tag then it started to work accordingly as shown in tutorial , but its not working in our system why , but hope it works soon 😆😆?? */
+/* 
+article p :first-child {
+  color: yellow;
+} */
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+  font-family: sens-serif;
+}
+a :visited {
+  /* color: #777; */
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline wavy orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/* Conflicting resolve of applying CSS  */
+/* 
+#copyright {
+  color: grey;
+}
+.copyright {
+  color: green;
+}
+.text {
+  color: gold;
+} */
+/* 
+footer p {
+  color: magenta !important;
+} */
+/* 
+nav a:link,
+nav p {
+  font-size: 18px;
+} */
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h2::first-letter {
+  font-size: 80px;
+}
+
+p::first-line {
+  color: red;
 }
