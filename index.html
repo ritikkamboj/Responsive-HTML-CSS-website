@@ -13,7 +13,7 @@
   <body>
     
     <div class="container" >
-    <header class="main-header">
+    <header class="main-header clearfix">
       <h1> 📘The Code Magzine</h1>
 
       <!-- <p>Blog <link rel="stylesheet" href="/blog.html" /></p> -->
@@ -25,16 +25,17 @@
         <a href="#">Flexbox</a>
         <a href="#">Grid</a>
       </nav>
+      <div class="clear"></div>
 
     </header>
 
     <article>
       <!-- <p>Test</p> -->
       <header class="post-header">
-        <p>
+        <!-- <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
           obcaecati?
-        </p>
+        </p> -->
         <h2>The basic language of web : HTML</h2>
 
         <img
@@ -42,8 +43,10 @@
           alt="author pic(need to be assign correct one)"
           width="50"
           height="50"
+          class="author-img"
         />
-        <p id="author">Posted by <strong>laura Jones</strong>
+
+        <p id="author" class="author">Posted by <strong>laura Jones</strong>
           
           <!-- <button>😀Like</button> -->
 
