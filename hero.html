@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Component</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coiny&family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-family: "Rubik", sans-serif;
+        color: #444;
+      }
+      .container {
+        width: 800px;
+        margin: 0px auto;
+        /* background-color: red; */
+      }
+
+      nav {
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        /* background-color: green; */
+      }
+      .header-container {
+        /* background-color: pink; */
+        /* margin-top: 10px; */
+        /* padding-top: 10px; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      h1 {
+        font-size: 52px;
+        margin-bottom: 32px;
+        line-height: 1.1;
+      }
+      .btn:link,
+      .btn:visited {
+        display: inline-block;
+        padding: 10px 20px;
+        /* height: 20px; */
+        /* width: 40px; */
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
+        background-color: orange;
+        text-decoration: none;
+        border-radius: 9px;
+      }
+      h3 {
+        font-size: 44px;
+        margin-bottom: 48px;
+      }
+      section {
+        padding: 96px 0;
+        background-color: #f7f7f7;
+      }
+      header {
+        /* background-color: orangered; */
+        /* margin-bottom: 30px; */
+        height: 100vh;
+        position: relative;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.542),
+            rgba(0, 0, 0, 0.542)
+          ),
+          url(/img/hero.jpeg);
+        background-size: cover;
+        color: #fff;
+      }
+      .inside {
+        width: 50%;
+      }
+      .inside p {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav style="padding: 20px 0px" class="container">
+        <div>Logo</div>
+        <div>navigation</div>
+      </nav>
+
+      <div class="container header-container">
+        <div class="inside">
+          <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, dicta.
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+            recusandae, provident similique rem eius excepturi aut porro laborum
+            quae odio.
+          </p>
+          <a href="" class="btn"> Button to Press</a>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil unde,
+          autem libero odio nostrum vitae, quod aspernatur officiis voluptas
+          harum iusto porro nemo a eligendi, temporibus quae aperiam corrupti
+          rem!
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
